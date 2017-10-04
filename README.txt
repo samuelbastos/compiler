@@ -10,7 +10,7 @@
        python de teste para checar se o  o resultado obtido no output ao
        ler o input é o esperado.
 
-OBS: Se houver problema de permissão com o script bash, utilizar chmod u+x run.sh
+OBS: Se houver problema de permissão com o script bash, utilizar chmod u+x run.sh .
 
 /** SOURCE  */
 
