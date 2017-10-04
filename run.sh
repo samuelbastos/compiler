@@ -1,0 +1,1 @@
+ ./a.out < one_input.txt > one_output.txt

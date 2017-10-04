@@ -1,0 +1,48 @@
+var1 : int ;
+var2 : float ;
+var3 : char[];
+
+main(param1:int, param2:void, param3:float[]) : void
+{
+	var5 : int;
+	var6 : float;
+	var7 : char[];
+	var8 : void;
+
+	var9 = 0xFF11;
+	var10 = 0.2 || 2 * 0.5 && 0.3;
+	var11 = 2 < 3 > (4 >= 5);
+	var12 = !(2 == 3);
+
+	{ 
+		function(); 
+		function(innerfunction(), 2, "string", (1+1), new char[1 || 2], idvar);
+		return new char[1 || 2];
+		return;
+		@ innerfunction() + 2; 
+	}
+
+	while (3 < 2)
+	{
+		@ 0.2 || 2 ;
+		function();
+		function(var13, var14);
+
+		if 0.2 > 3 && 0.3 < 4
+		{
+			if(0.3 == 3)
+			{
+				var15 : int;
+				vars16[15] = 10;
+				var17 = new void[3];
+				var18 = new void[3 + 4];
+			}
+		}
+	}
+
+	var19 = "string";
+	("string")[ 0.2 > 3] = 23 + 15 as char[];
+	(var20 as float)[ 0.2 > 3] = 23 + 15 as void[];
+
+	return  4;
+}
