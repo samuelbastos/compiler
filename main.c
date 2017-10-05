@@ -8,8 +8,23 @@
 
 int main(void)
 {
-	if(!yyparse()) printf("SUCCESS");
-	else printf("FAILURE");
+	int flag;
+	AST_PROGRAM* iter;
+
+	if(!yyparse())
+	{
+		printf("SUCCESS\n");
+
+		for(iter = tree; iter != NULL; iter = iter->last)
+		{
+			flag = iter->def->tag;
+
+			printf("FLAG: %d ", flag);			
+			printf("ola\n");
+		}
+	} 
+	else 
+		printf("FAILURE");
 
 	return 0;
 }

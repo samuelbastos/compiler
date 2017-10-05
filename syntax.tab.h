@@ -83,19 +83,31 @@ extern int yydebug;
 typedef union YYSTYPE YYSTYPE;
 union YYSTYPE
 {
-#line 9 "syntax.y" /* yacc.c:1909  */
+#line 10 "syntax.y" /* yacc.c:1909  */
 
-	int _int;
-	float _float;
-	char* _string;
-	char* _id;
-	AST_EXP* _exp;
-	AST_TYPE* _type;
-	AST_VAR* _var;
-	AST_EXPLIST* _explist;
-	AST_CALL* _call;
+    int _int;
+    float _float;
+    char* _string;
+    char* _id;
 
-#line 99 "syntax.tab.h" /* yacc.c:1909  */
+    AST_EXP* _exp;
+    AST_TYPE* _type;
+    AST_VAR* _var;
+    AST_EXPLIST* _explist;
+    AST_CALL* _call;
+    AST_STAT* _stat;
+    AST_DEFVAR* _defvar;
+    AST_DEFVARLIST* _defvarlist;
+    AST_STATLIST* _statlist;
+    AST_BLOCK* _block;
+    AST_ELSE* _else;
+    AST_PARAM* _param;
+    AST_PARAMLIST* _paramlist;
+    AST_DEFFUNC* _deffunc;
+    AST_DEF* _def;
+    AST_PROGRAM* _program;
+
+#line 111 "syntax.tab.h" /* yacc.c:1909  */
 };
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
